@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password | eStartup</title>
+    <link rel="shortcut icon" href="./img/leaf.png" type="images/x.icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel ="stylesheet" href="./css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="bgPages">
+
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+       <div class="bg-light shadow-lg border border-1 rounded-3 p-4 m-1" id="resetBox">
+        <div class="d-flex flex-column text-center justify-content-center mb-3"><i class="fa-solid fa-lock mx-auto mb-3"></i>
+        <p class="mb-0 lead fs-4">Trouble logging in ?</p></div>
+
+       <h1 class="text-center mb-3" id="header"><span>e</span>Startup</h1>
+
+       <input type="email" class="form-control mb-3" placeholder="Enter Your Email" id="userEmailReset">
+       <div id="alretEmail" class="alert-msg text-danger mb-2 d-none"> This email does not exist
+       </div>
+       <div class="form-outline position-relative">
+        <i class="fa-solid fa-eye-slash" id="passIcon"></i>
+</div>
+       <input type="password" class="form-control mb-3" placeholder="Enter new Password" id="userPasswordReset">
+       <div id="alretPass" class="alert-msg text-danger mb-2 d-none">
+           password is invalid</div>
+  
+   
+           <div class="text-center my-3 py-2">
+            <a class="custom-btn mb-3" id="updateBtn">update password</a>
+        </div>
+   
+   
+       <div class="text-center my-3 py-2">
+       <a class="custom-btn mb-3" id="back" href="index.html">back to login</a>
+   </div>
+   
+     </div>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="./js/reset.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+   
+   </body>
+</html>

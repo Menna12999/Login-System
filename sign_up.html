@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | eStartup</title>
+    <link rel="shortcut icon" href="./img/leaf.png" type="images/x.icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel ="stylesheet" href="./css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="bgPages">
+
+ <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+    <div class="bg-light shadow-lg border border-1 rounded-3 p-4 m-1" id="signupBox">
+    <h1 class="text-center mb-3" id="header"><span>e</span>Startup</h1>
+    <input type="text" class="form-control mb-3" placeholder="Enter Your Name" id="userName">
+    <div id="alretName" class="alert-msg text-danger mb-2 d-none">user name must contain at least 3 characters</div>
+    <input type="email" class="form-control mb-3" placeholder="Enter Your Email" id="userEmail">
+    <div id="alretEmail" class="alert-msg text-danger mb-2 d-none"> email must be a valid one
+    </div>
+
+    <div class="form-outline position-relative">
+        <i class="fa-solid fa-eye-slash" id="passIcon"></i>
+
+        </div>
+    <input type="password" class="form-control mb-3" placeholder="Enter Your Password" id="userPassword">
+
+    <div id="alretPass" class="alert-msg text-danger mb-2 d-none">
+        <ul>
+            <li>Minimum eight characters</li>
+            <li>at least one upper case English letter</li>
+            <li>one lower case English letter</li>
+            <li>one number and one special character</li>
+        </ul></div>
+
+
+
+
+
+
+
+    <div class="text-center">
+    <button class="custom-btn mb-3" id="signupBtn">Sign Up</button>
+</div>
+<p class="text-center">You have an account ? <a href="index.html">Sign In</a></p>
+
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="./js/signup.js"></script>
+ <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
